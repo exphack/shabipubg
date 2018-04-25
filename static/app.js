@@ -55,7 +55,7 @@ vapp = new Vue({
     showAmmo556: false,
     showAmmo762: false,
     showForeGrip: false,
-    showLowST: false,
+    showLowST: true,
     showHighST: true,
     showARCnFH: false,
     showARSuppressor: true,
@@ -223,7 +223,8 @@ vapp = new Vue({
         this.toggleButtonText = ' Stop Refresh'
       }
     },
-    setFPS (fps) { //修改固定FPS
+    fps=60//修改固定FPS
+    setFPS (fps) { 
       appData.refreshInterval = Math.floor(1000 / fps)
     },
     showNoItems () {

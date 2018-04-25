@@ -223,7 +223,6 @@ vapp = new Vue({
         this.toggleButtonText = ' Stop Refresh'
       }
     },
-    fps=60//修改固定FPS
     setFPS (fps) { 
       appData.refreshInterval = Math.floor(1000 / fps)
     },
